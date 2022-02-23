@@ -13,4 +13,11 @@ Link:
           https://www.nordicsemi.com/Products/nRF5340
   - ST IOT01A2 board has ST's SPBTLE-RF module which has BlueNRG-MS processor
           https://www.st.com/en/wireless-connectivity/bluenrg-ms.html
+          
+  3. Links:
+    Arduino:
+
+    STM32:
+      - https://wiki.st.com/stm32mcu/wiki/STM32StepByStep:Step5_Build_an_IOT_system
+      - https://www.youtube.com/watch?v=6eUqxjBL_wI
   
