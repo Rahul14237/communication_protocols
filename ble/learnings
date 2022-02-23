@@ -1,0 +1,21 @@
+ref: http://software-dl.ti.com/lprf/simplelink_cc2640r2_sdk/1.35.00.33/exports/docs/ble5stack/ble_user_guide/html/ble-stack/overview.html
+
+
+1. The Generic Access Profile (GAP) controls the RF state of the device, with the device in one of five states:
+    - Standby
+    - Advertising
+    - Scanning
+    - Initiating
+    - Connected
+
+    Advertisers(A) transmit data without connecting, while scanners(B) scan for advertisers. 
+    An initiator(B) is a device that responds to an advertiser(A) with a request to connect. 
+    If the advertiser(A) accepts the connection request, both the advertiser(A) and initiator(B) enter a connected state. 
+    When a device is connected, it connects as either master or slave. Scanners become master(B) and advertisers become slave(A).
+    The device(B) initiating the connection becomes the master(B) and the device(A) accepting the request becomes the slave(A).
+    
+2. Layers of BLE: fig 1
+    - GATT: The Generic Attribute Profile (GATT) layer is a service framework that defines the sub-procedures for using ATT. 
+            Data communications that occur between two devices in a Bluetooth low energy connection are handled through GATT sub-procedures. 
+            The application and/or profiles will directly use GATT.
+    - 
