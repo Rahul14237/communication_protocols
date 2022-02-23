@@ -1,0 +1,12 @@
+1. Import <ArduinoBLE.h>
+2. Create required service and characteristics using "BLEService" and "BLEByteCharacteristic" classes
+     syntax: className service/char name(input argumnets as per constructor)
+3. Under setup() do:
+    a.  Initialize BLE peripheral using "begin" function of "BLE" class
+    b.  Set service and characteristic:
+         i. Set the advertised service using "setAdvertisedService" function of BLE class
+         ii. Add characteristic in the service set earlier using "addCharacteristic" function of "BLEService" class
+         iii. Add service using "addService" function of "BLE" class
+4. Under loop() do:
+    a. Check if central is discoverable using "Central" function of BLE
+    b. if central is connected then continously update the charceteristic value using "Value" function
